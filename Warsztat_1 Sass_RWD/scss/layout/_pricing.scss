@@ -1,4 +1,57 @@
-//@import "../settings/colors";
+@import "../settings/colors";
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .headers {
+    padding: 6rem 0 1.4rem 0;
+  }
+
+  .pricing-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 5.4rem;
+    justify-content: center;
+    align-items: center;
+
+    .pricing-tabs-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 25.1rem;
+      width: 29.3rem;
+      border-radius: 1.8rem;
+
+      &:nth-child(1) {
+        border: 1px solid $color-redish;
+      }
+
+      &:nth-child(2) {
+        border: 1px solid $color-primary;
+        height: 27.7rem;
+        width: 33.9rem;
+        box-shadow: 0.5rem 1rem 2.7rem $color-primary-shadow;
+      }
+
+      &:nth-child(3) {
+        border: 1px solid $color-green;
+      }
+
+      .pricing-tabs-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .pricing-btn {
+      width: 10rem;
+    }
+  }
+}
+
 //
 //.pricing-container .headers {
 //  text-align: center;

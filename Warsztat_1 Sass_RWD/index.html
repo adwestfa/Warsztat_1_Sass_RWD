@@ -47,7 +47,7 @@
     <p class="second-section-content content-text">Open shop on our platform and increase your sales</p>
     <a href="#" class="first-section-btn btn">Open your shop</a>
     <div class="photo-img">
-    <img src="assets/Background.png" alt="table with laptop,note and cup of coffee">
+        <img src="assets/Background.png" alt="table with laptop,note and cup of coffee">
     </div>
 </section>
 
@@ -137,46 +137,130 @@
 
 <!--PRICING SECTION-->
 
-<section class="pricing-container">
+<section class="pricing-container container">
     <h2 class="headers">Pricing</h2>
     <div class="pricing-tabs">
-        <div class="pricing-tabs-box">
-            <h3 class="headers-pricing">Basic</h3>
-            <h3 class="pricing-box-price">$0</h3>
-            <ul class="pricing-list">
-                <li class="pricing-list-text">100 MB HDD</li>
-                <li class="pricing-list-text">1 Subdomain</li>
-                <li class="pricing-list-text">2 E-mails</li>
-                <li class="pricing-list-text x-pricing-list-text">Two years license</li>
-                <li class="pricing-list-text x-pricing-list-text">Full support</li>
-            </ul>
+        <div class="pricing-tabs-container">
+            <div class="pricing-tabs-box">
+                <div class="pricing-tabs-prices">
+                    <h3 class="headers-pricing">Basic</h3>
+                    <h3 class="pricing-box-price">$0</h3>
+                </div>
+                <ul class="pricing-list">
+                    <li class="pricing-list-text">100 MB HDD</li>
+                    <li class="pricing-list-text">1 Subdomain</li>
+                    <li class="pricing-list-text">2 E-mails</li>
+                    <li class="pricing-list-text x-pricing-list-text">Two years license</li>
+                    <li class="pricing-list-text x-pricing-list-text">Full support</li>
+                </ul>
+            </div>
             <a href="#" class="btn pricing-btn">Begin</a>
         </div>
-        <div class="pricing-tabs-box">
-            <h3 class="headers-pricing">Professional</h3>
-            <h3 class="pricing-box-price">$25</h3>
-            <p class="text-box-price"> Limited offer</p>
-            <ul class="pricing-list">
-                <li class="pricing-list-text">500 MB HDD</li>
-                <li class="pricing-list-text">2 Subdomains</li>
-                <li class="pricing-list-text">5 E-mails</li>
-                <li class="pricing-list-text">One year license</li>
-                <li class="pricing-list-text x-pricing-list-text">Full support</li>
-            </ul>
+        <div class="pricing-tabs-container">
+            <div class="pricing-tabs-box">
+                <div class="pricing-tabs-prices">
+                    <h3 class="headers-pricing">Professional</h3>
+                    <h3 class="pricing-box-price">$25</h3>
+                    <p class="text-box-price"> Limited offer</p>
+                </div>
+
+                <ul class="pricing-list">
+                    <li class="pricing-list-text">500 MB HDD</li>
+                    <li class="pricing-list-text">2 Subdomains</li>
+                    <li class="pricing-list-text">5 E-mails</li>
+                    <li class="pricing-list-text">One year license</li>
+                    <li class="pricing-list-text x-pricing-list-text">Full support</li>
+                </ul>
+                           </div>
             <a href="#" class="btn pricing-btn">Begin</a>
         </div>
-        <div class="pricing-tabs-box">
-            <h3 class="headers-pricing">Premium</h3>
-            <h3 class="pricing-box-price">$60</h3>
-            <p class="text-box-price"> Limited offer</p>
-            <ul class="pricing-list">
-                <li class="pricing-list-text">2 GB HDD</li>
-                <li class="pricing-list-text">5 Subdomains</li>
-                <li class="pricing-list-text">20 E-mails</li>
-                <li class="pricing-list-text">Two years license</li>
-                <li class="pricing-list-text">Full support</li>
-            </ul>
+        <div class="pricing-tabs-container">
+            <div class="pricing-tabs-box">
+                <div class="pricing-tabs-prices">
+                    <h3 class="headers-pricing">Premium</h3>
+                    <h3 class="pricing-box-price">$60</h3>
+                    <p class="text-box-price"> Limited offer</p>
+                </div>
+
+                <ul class="pricing-list">
+                    <li class="pricing-list-text">2 GB HDD</li>
+                    <li class="pricing-list-text">5 Subdomains</li>
+                    <li class="pricing-list-text">20 E-mails</li>
+                    <li class="pricing-list-text">Two years license</li>
+                    <li class="pricing-list-text">Full support</li>
+                </ul>
+            </div>
             <a href="#" class="btn pricing-btn">Begin</a>
+        </div>
+    </div>
+</section>
+
+<!--CALS-->
+
+<section class="calc container roboczy">
+    <h2>Calculate how much you’ll pay</h2>
+
+    <div class="calc__columns">
+        <form class="calc__form">
+            <div class="calc__input">
+                <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+            </div>
+            <div class="calc__input">
+                <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+            </div>
+            <div class="calc__select" id="package" data-value="">
+                <div class="select__input">
+                    Choose package
+                </div>
+
+                <ul class="select__dropdown">
+                    <li data-value="basic">Basic</li>
+                    <li data-value="professional">Professional</li>
+                    <li data-value="premium">Premium</li>
+                </ul>
+            </div>
+            <label class="form__checkbox">
+                <input type="checkbox" id="accounting"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Accounting</p>
+            </label>
+            <label class="form__checkbox">
+                <input type="checkbox" id="terminal"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Rental of a payment terminal</p>
+            </label>
+        </form>
+
+        <div class="calc__summary">
+            <ul>
+                <li class="list__item" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc">1 * $0.5</span>
+                    <span class="item__price">$0.5</span>
+                </li>
+                <li class="list__item" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc">1 * $0.5</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc">Premium</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="item__price">$10</span>
+                </li>
+            </ul>
+            <div class="summary__total" id="total-price">
+                <span>Total</span>
+                <span class="total__price">$700</span>
+            </div>
         </div>
     </div>
 </section>
@@ -237,5 +321,8 @@
         </a>
     </div>
 </footer>
+
+<script src="js/app.js"></script>
+
 </body>
 </html>
